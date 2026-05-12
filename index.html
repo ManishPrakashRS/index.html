@@ -376,6 +376,112 @@
   color: #ff4d4d;
   transform: scale(1.1);
 }
+/* MAIN SECTION */
+.india-section{
+    text-align:center;
+    padding:50px 20px;
+    background:rgba(255,255,255,0.05);
+    border-radius:25px;
+    width:fit-content;
+    margin:auto;
+    backdrop-filter:blur(10px);
+    box-shadow:0 0 30px rgba(0,0,0,0.3);
+}
+
+/* FLAG AREA */
+.flag-wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    margin-bottom:25px;
+}
+
+/* FLAG POLE */
+.pole{
+    width:8px;
+    height:180px;
+    background:silver;
+    border-radius:10px;
+}
+
+/* FLAG */
+.flag{
+    width:180px;
+    height:120px;
+    margin-top:10px;
+    transform-origin:left center;
+    animation:wave 2s infinite ease-in-out;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+
+/* FLAG COLORS */
+.saffron{
+    height:40px;
+    background:#FF9933;
+}
+
+.white{
+    height:40px;
+    background:white;
+    position:relative;
+}
+
+.green{
+    height:40px;
+    background:#138808;
+}
+
+/* ASHOKA CHAKRA */
+.chakra{
+    width:28px;
+    height:28px;
+    border:3px solid navy;
+    border-radius:50%;
+    position:absolute;
+    top:5px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+/* FLAG WAVE ANIMATION */
+@keyframes wave{
+
+    0%{
+        transform:perspective(600px) rotateY(0deg);
+    }
+
+    50%{
+        transform:perspective(600px) rotateY(-18deg);
+    }
+
+    100%{
+        transform:perspective(600px) rotateY(0deg);
+    }
+
+}
+
+/* MADE IN INDIA TAG */
+.made-tag{
+    display:inline-block;
+    margin-top:10px;
+    margin-bottom:30px;
+    padding:12px 28px;
+    border-radius:40px;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:3px;
+    background:linear-gradient(90deg,#FF9933,#ffffff,#138808);
+    color:black;
+    box-shadow:0 0 20px rgba(255,153,51,0.5);
+}
+
+/* MAKE IN INDIA IMAGE */
+.make-india-logo{
+    width:260px;
+    margin-top:10px;
+    filter:drop-shadow(0 0 20px rgba(255,255,255,0.3));
+}
+
   </style>
 </head>
 <body>
@@ -682,7 +788,39 @@
           <p>Premium nylon fishing nets manufacturer and exporter for fishing fleets, aquaculture farms, importers, and distributors.</p>
           <a href="https://maps.app.goo.gl/d8ZRk8F9dBpodfBq6">For Location click here 👉- 📌 </a>
         </div>
-        <div>
+     <!-- INDIA SECTION -->
+
+<div class="india-section">
+
+    <!-- Flying Indian Flag -->
+    <div class="flag-wrapper">
+
+        <div class="pole"></div>
+
+        <div class="flag">
+
+            <div class="saffron"></div>
+
+            <div class="white">
+                <div class="chakra"></div>
+            </div>
+
+            <div class="green"></div>
+
+        </div>
+
+    </div>
+
+    <!-- MADE IN INDIA TAG -->
+    <div class="made-tag">
+        MADE IN INDIA
+    </div>
+
+    <!-- MAKE IN INDIA IMAGE -->
+    <img src="make-india.jpeg" class="make-india-logo">
+
+</div>
+     <div>
           <h3>Products</h3>
           <a href="#products">Nylon Monofilament Nets</a>
           <a href="#products">Nylon Multi Nets</a>
